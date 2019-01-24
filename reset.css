@@ -1,3 +1,5 @@
+/* ----------------------------------------------------------------------------- GLOBAL */
+
 /**
  * Hard reset margin and padding
  */
@@ -7,33 +9,41 @@
 }
 
 /**
- * Default Box sizing
+ * Default Box sizing on before & after pseudo elements
  */
-html {
-    box-sizing: border-box;
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 /**
- * Defaut title
- * Reset default browser margin
- * Reset default browser bold font weight
- */
-h1, h2, h3, h4, h5 {
-    margin: 0;
-    font-weight: normal;
-}
-
-/**
+ * Default Box sizing
  * Correct the line height in all browsers.
  * Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
+    box-sizing: border-box;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
+}
+
+/* ----------------------------------------------------------------------------- SECTION */
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+    display: block;
+}
+
+/* ----------------------------------------------------------------------------- TEXT */
+
+/**
+ * Remove default title browser margin
+ * Remove default title browser UGLY bold font weight
+ */
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: normal;
 }
 
 /**
@@ -52,18 +62,9 @@ strong {
 }
 
 /**
- * Add the correct box sizing in Firefox.
- * Show the overflow in Edge and IE.
- */
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-}
-
-/**
  * Correct the inheritance and scaling of font size in all browsers.
  * Correct the odd `em` font sizing in all browsers.
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
  */
 pre {
     font-family: monospace, monospace;
@@ -109,11 +110,41 @@ sup {
 }
 
 /**
+ * Add the correct box sizing in Firefox.
+ * Show the overflow in Edge and IE.
+ */
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+/* ----------------------------------------------------------------------------- TEXT CONTENT */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+    display: list-item;
+}
+
+/* ----------------------------------------------------------------------------- MEDIA */
+
+/**
  * Remove the border on images inside links in IE 10.
  */
 img {
     border-style: none;
 }
+
+/* ----------------------------------------------------------------------------- FORM */
 
 /**
  * Change the font styles in all browsers.
@@ -134,7 +165,7 @@ textarea {
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
- * TODO : remove other properties by default ? outline ?
+ * TODO : remove other Button properties by default?
  */
 button,
 input {
@@ -260,22 +291,11 @@ textarea {
     font: inherit;
 }
 
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-    display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-    display: list-item;
-}
+/* ----------------------------------------------------------------------------- MISC */
 
 /**
  * Add the correct display in IE 10+.
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
  */
 template {
     display: none;

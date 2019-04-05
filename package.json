@@ -1,0 +1,24 @@
+{
+  "name": "css-flat",
+  "version": "1.0.0",
+  "description": "Clean CSS-flat file written in pure CSS.",
+  "main": "css-flat.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solid-js/css-flat.git"
+  },
+  "keywords": [
+    "css",
+    "flat",
+    "starter"
+  ],
+  "author": "Solid JS core team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solid-js/css-flat/issues"
+  },
+  "homepage": "https://github.com/solid-js/css-flat#readme"
+}

@@ -1,12 +1,12 @@
-# css-reset
+# css-flat
 
-*css-reset* is a clean CSS reset file written in pure CSS. Can also be imported in LESS or SASS projects. Inspired by [normalize.css](http://necolas.github.io/normalize.css/).
+*css-flat* is a clean CSS flat file written in pure CSS. It can also be imported in LESS or SASS projects.
 
 # Motivation
 
 For custom projects we need full control of style of our components and therefore by-pass the default browser markup style.
-[normalize.css](http://necolas.github.io/normalize.css/) offer a reset starter while maintaining but keep pre-style some markups like title or list.
-*css-reset* allow to start a project with the **flattest style as possible**.
+[normalize.css](http://necolas.github.io/normalize.css/) offer a reset starter while maintaining pre-style markups like title or list between each browsers, while
+*css-flat* normalize and especially **flat** markups style, allow to start a project with the **flattest style as possible**.
 
 ## Example
 
@@ -24,7 +24,7 @@ For custom projects we need full control of style of our components and therefor
     }
 ```      
 
-`<h1>` with css-reset will overwrite some values and return:
+`<h1>` *css-flat* will overwrite some values and return:
 ```css
     h1 {
         display: block; /* default browser value */

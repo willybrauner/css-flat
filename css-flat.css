@@ -42,13 +42,14 @@ main {
  * Remove default title browser UGLY bold font weight
  */
 h1, h2, h3, h4, h5, h6 {
-    font-size: 1rem;
+    font-size: 1em;
     margin: 0;
     font-weight: normal;
 }
 
 /**
  * Remove the gray background on active links in IE 10.
+ * Remove default underline
  */
 a {
     background-color: transparent;
@@ -56,7 +57,7 @@ a {
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
+ * Init flat font-wheight
  */
 b,
 strong {
@@ -76,8 +77,9 @@ ul {
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
  */
 pre {
-    font-family: monospace, monospace;
     font-size: 1em;
+    font-family: monospace;
+    margin: 0;
 }
 
 /**
@@ -92,10 +94,10 @@ samp {
 }
 
 /**
- * Add the correct font size in all browsers.
+ * Init the correct font size in all browsers.
  */
 small {
-    font-size: 80%;
+    font-size: 1em;
 }
 
 /**
@@ -104,18 +106,18 @@ small {
  */
 sub,
 sup {
-    font-size: 75%;
+    font-size: 1em;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
 
 sub {
-    bottom: -0.25em;
+    bottom: 0;
 }
 
 sup {
-    top: -0.5em;
+    top: 0;
 }
 
 /**
@@ -126,6 +128,7 @@ hr {
     box-sizing: content-box;
     height: 0;
     overflow: visible;
+    margin: 0 auto;
 }
 
 /* ----------------------------------------------------------------------------- TEXT CONTENT */
@@ -141,15 +144,17 @@ details {
  * Add the correct display in all browsers.
  */
 summary {
-    display: list-item;
+    display: block;
 }
 
 /* ----------------------------------------------------------------------------- MEDIA */
 
 /**
+ * Init position
  * Remove the border on images inside links in IE 10.
  */
 img {
+    display: block;
     border-style: none;
 }
 
@@ -158,23 +163,30 @@ img {
 /**
  * Change the font styles in all browsers.
  * Remove the margin in Firefox and Safari.
+ * Remove background color
+ * Remove border
  */
-
 button,
 input,
 optgroup,
 select,
 textarea {
+    display: block;
     font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
+    font-size: 1em;
     margin: 0;
+    border: 0;
+    color: inherit;
+    background: none;
+    line-height: normal;
+    overflow: visible;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 /**
  * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- * TODO : remove other Button properties by default?
+ * Show the overflow in Edge.
  */
 button,
 input {
@@ -222,10 +234,14 @@ button:-moz-focusring,
 }
 
 /**
- * Correct the padding in Firefox.
+ * Init full style
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Fieldset
  */
 fieldset {
-    padding: 0.35em 0.75em 0.625em;
+    display: block;
+    font-size: 1em;
+    padding: 0;
+    border: 0;
 }
 
 /**
@@ -233,18 +249,20 @@ fieldset {
  * Correct the color inheritance from `fieldset` elements in IE.
  * Remove the padding so developers are not caught out when they zero out
  * `fieldset` elements in all browsers.
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend
  */
 legend {
+    display: block;
     box-sizing: border-box;
     color: inherit;
-    display: table;
-    max-width: 100%;
+    border: none;
     padding: 0;
     white-space: normal;
 }
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress
  */
 progress {
     vertical-align: baseline;

@@ -28,7 +28,7 @@ For custom projects we need full control of style of our components and therefor
 ```css
     h1 {
         display: block; /* default browser value */
-        font-size: 1rem; /* reset */
+        font-size: 1em; /* reset */
         margin: 0; /* reset */
         font-weight: normal; /* reset */
     }

@@ -34,6 +34,8 @@ For custom projects we need full control of style of our components and therefor
     }
 ```
 
+[Test it!](./test.html)
+
 ## Credit 
 
 Written and maintained by [Solid JS core team](https://github.com/solid-js). 

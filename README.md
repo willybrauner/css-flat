@@ -5,8 +5,8 @@
 # Motivation
 
 For custom projects we need full control of style of our components and therefore by-pass the default browser markup style.
-[normalize.css](http://necolas.github.io/normalize.css/) offer a reset starter while maintaining pre-style markups like title or list between each browsers, while
-*css-flat* normalize and especially **flat** markups style, allow to start a project with the **flattest style as possible**.
+[normalize.css](http://necolas.github.io/normalize.css/) offer a reset starter allowing to maintaining pre-style markups like title or list between each browsers, while
+*css-flat* normalize and especially **flat** markups style. This one will be use to start project with the **flattest style as possible**.
 
 ## Example
 

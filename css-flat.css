@@ -78,7 +78,7 @@ ul {
  */
 pre {
     font-size: 1em;
-    font-family: monospace;
+    font-family: inherit;
     margin: 0;
 }
 
@@ -89,7 +89,7 @@ pre {
 code,
 kbd,
 samp {
-    font-family: monospace, monospace;
+    font-family: inherit;
     font-size: 1em;
 }
 
@@ -139,13 +139,22 @@ hr {
 details {
     display: block;
 }
-
 /*
  * Add the correct display in all browsers.
+ * Remove outline.
  */
 summary {
     display: block;
+    outline: none;
 }
+
+/**
+ * Remove arrow indicatore
+ */
+details summary::-webkit-details-marker {
+    display:none;
+}
+
 
 /* ----------------------------------------------------------------------------- MEDIA */
 
@@ -165,41 +174,28 @@ img {
  * Remove the margin in Firefox and Safari.
  * Remove background color
  * Remove border
+ * Remove outline
  */
 button,
 input,
 optgroup,
+option,
 select,
 textarea {
     display: block;
-    font-family: inherit;
-    font-size: 1em;
     margin: 0;
     border: 0;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: normal;
     color: inherit;
     background: none;
-    line-height: normal;
-    overflow: visible;
+    text-transform: none;
     appearance: none;
     -webkit-appearance: none;
-}
-
-/**
- * Show the overflow in IE.
- * Show the overflow in Edge.
- */
-button,
-input {
+    outline: none;
     overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-    text-transform: none;
 }
 
 /**

@@ -36,7 +36,9 @@ h1 {
 }
 ```
 
-[Test it!](./test.html)
+## Test
+
+You can [test it online!](https://codesandbox.io/s/github/solid-js/css-flat/tree/master/?fontsize=14)
 
 ## Credit 
 
